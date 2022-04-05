@@ -21,15 +21,17 @@ while (temp != "stop")
     temp = Console.ReadLine();
 }
 Console.Clear();
-int j = 0;
+int j = 0; // проверку на отрицательность в выводе
 foreach (int tempe in temperature)
 {
-    Console.Write(j);
+    Console.Write(j+1);
     Console.Write(". ");
+
     if (minus[j] == 1)
         Console.Write("(-)");
     else if(minus[j] == 2)
         Console.Write("(+)");
+
     Console.Write(tempe);
     Console.Write("\n");
     j++;
