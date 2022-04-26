@@ -55,7 +55,7 @@ namespace Notes // Note: actual namespace depends on the project name.
                         ((Person)note[i]).Name = Console.ReadLine(); // вместо ((Person)note[i]).Age = temp; передать значение в параметры note.Add(new Person());
                         Console.WriteLine("Введите фамилию");
                         ((Person)note[i]).LastName = Console.ReadLine();
-                        Console.WriteLine("Введите возраст");
+                        Console.WriteLine("Введите возраст");//dgf
                         int.TryParse(Console.ReadLine(), out temp);
                         ((Person)note[i]).Age = temp;
                         i++;
